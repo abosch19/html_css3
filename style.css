@@ -1,0 +1,45 @@
+html {
+	font-size:100%;
+}
+
+h1 {
+	font-size: 2rem; /*//ROOT EM*/
+}
+
+a {
+	font-size: .8em;
+}
+
+span {
+	font-size: 1rem;
+}
+
+.square {
+	width: 1em;
+	height: 1em;
+	background-color: peru;
+	font-size: 100px;
+}
+	.square::after {
+		content: "";
+		width: .5em;
+		height: .5em;
+		background-color: red;
+		position: absolute;
+		top: .25em;
+		left: .25em;
+	}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: peru;
+	height: 50vw;
+	width: 20vw; /*Viweport Width*/
+}
+	li {
+		background-color: olive;
+		height: 20vh;
+		border-bottom: maroon 1px solid;
+	}
