@@ -2,22 +2,42 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>FrontPlatzi</title>
+	<title>PlatziWeather</title>
+	<meta name="viewport" content="widht=devi-width, inital-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<h1 class="centrar">Título</h1>
-<span class="weather-card__date centrar">Subtítulos de mi web</span>
-<article class="weather-card">
-	<h3 class="weather-card__header">Sunnyvale</h3>
-	<h4 class="weather-card__date">March, 25th</h4>
-	<img src="" class="weather-card__img" />
-	<ul class="weather-card__footer">
-		<li class="weather-card__footer__item temperature" data-unidad="F">Elemnto</li>
-		<li class="weather-card__footer__item">Elemento 2</li>
-		<li class="weather-card__footer__item">Elemento 3</li>
-		<li class="weather-card__footer__item">Elemento 4</li>
-	</ul>
-</article>
+	<header class="main-header">
+		<h1>PlatziWeather</h1>
+		<h2>An awesome way to see how we burn by global warming</h2>
+	</header>
+
+	<main class="cards-group">
+	<div class="card card--valencia">
+		<header class="card__header">
+			<h3 class="card__title">Valencia</h3>
+			<h4 class="card__date">07:39 am</h4>
+		</header>
+		<div class="card__info">
+			<img src="http://openweathermap.org/img/w/02d.png" alt="" class="card__image">
+			<span class="card_maxt">18º</span>
+			<span class="card_mint">11º</span>
+			<span class="card_temp">13º</span>
+		</div>
+	</div>
+	<div class="card card--mv" data-city="mv">
+		<header class="card__header">
+			<h3 class="card__title">Mountain View</h3>
+			<h4 class="card__date">07:39 am</h4>
+		</header>
+		<div class="card__info">
+			<img src="http://openweathermap.org/img/w/02d.png" alt="" class="card__image">
+			<span class="card_maxt">18º</span>
+			<span class="card_mint">11º</span>
+			<span class="card_temp">13º</span>
+		</div>
+	</div>
+	</main>
 </body>
 </html>

@@ -1,0 +1,107 @@
+@mixin box-sizing {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+$gutter: .4em;
+
+html {
+	font-family: 'Arimo',sans-serif;
+	font-size: 110%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	html {
+		font-size: 80%;
+	}
+}
+
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.main-header {
+	text-align: center;
+	background-color: #16210b;
+	color: white;
+	padding: 4em;
+}
+
+	.main-header h1 {
+		margin: 0;
+	}
+
+	.main-header h2 {
+		font-size: 1rem;
+		font-weight: normal;
+	}
+/*
+@media screen and (min-width: 401px) {
+	.main-header {
+		background-color: olive;
+	}
+	.main-header h1 {
+		color: orange;
+	}
+}
+*/
+
+.card {
+	height: 30vh;
+	width: 100%;
+	color: white;
+	padding: $gutter;
+	position: relative;
+	font-family: 'Megrim', cursive;
+	@include box-sizing
+}
+	.card--valencia {
+		background-image: url(http://www.viajejet.com/wp-content/viajes/oceanografico.jpg);
+		background-size: auto;
+	}
+
+	.card[data-city="mv"] {
+		background-image: url(http://www.lafm.com.co/sites/default/files/imagecache/fluid_gallery_high/imagenes/google1_1350649074.jpg);
+		background-size: auto;
+	}
+
+	.card__title  {
+		margin: 0;
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	.card__date {
+		font-size: .7rem;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.card__info {
+		position: absolute;
+		bottom: .4em;
+		left: .4em;
+		text-align: center;
+	}
+		.card__image {
+			display: block;
+			text-align: center;
+		}
+
+		.card_temp {
+			display: block;
+			font-size: 3rem;
+			line-height: 1;
+		}
+
+		.card_maxt::before {
+			content: "Max: "
+		}
+
+		.card_mint::before {
+			content: "Min: "
+		}
