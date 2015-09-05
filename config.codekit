@@ -28,10 +28,10 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/scss\/style.scss",
-		"outputAbbreviatedPath": "\/style.css",
-		"outputPathIsOutsideProject": 0,
+		"outputAbbreviatedPath": "\/Users\/alexbosch\/Desktop\/style.css",
+		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
